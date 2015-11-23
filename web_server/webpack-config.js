@@ -4,6 +4,7 @@ var Webpack = require('webpack'),
     precss = require('precss'),
     pkg = require('./../package.json');
 
+
 var eslintrcPath = path.resolve(__dirname, '../.eslintrc'),
     nodeModulesPath = path.resolve(__dirname, '../node_modules'),
     buildPath = path.resolve(__dirname, '../build'),

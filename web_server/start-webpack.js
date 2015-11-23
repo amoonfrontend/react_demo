@@ -25,5 +25,5 @@ app.listen(PORT, 'localhost', function(err) {
         return;
     }
     console.log('Listening at http://localhost:' + PORT);
-    opn('http://localhost:' + PORT);
+    // opn('http://localhost:' + PORT);
 });
