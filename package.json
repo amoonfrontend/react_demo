@@ -1,0 +1,19 @@
+{
+  "name": "react_demo",
+  "version": "1.0.0",
+  "description": "This is a demo about react.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoonfrontend/react_demo.git"
+  },
+  "author": "ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amoonfrontend/react_demo/issues"
+  },
+  "homepage": "https://github.com/amoonfrontend/react_demo#readme"
+}
