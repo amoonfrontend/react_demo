@@ -12,7 +12,7 @@ var eslintrcPath = path.resolve(__dirname, '../.eslintrc'),
 
 // Raise tread pool size to prevent bundling stuck issue
 process.env.UV_THREADPOOL_SIZE = 100;
-
+// bootstrapCss: './node_modules/bootstrap/dist/css/bootstrap.css',
 var config = {
     devtool: 'eval',
     watch: true,
@@ -42,16 +42,20 @@ var config = {
                 exclude: nodeModulesPath
             },
             {
-                test: /\.(css|scss)$/,
-                loaders: ['style', 'css', 'sass', 'postcss']
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
+            },
+            {
+                test: /\.less$/,
+                loader: 'style-loader!css-loader!autoprefixer-loader!less-loader'
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
-                loader: 'url?limit=8192'
+                loader: 'url-loader?limit=8192'
             },
             {
                 test : /\.(woff|woff2|ttf|eot)$/,
-                loader: 'url'
+                loader: 'url-loader'
             }
         ]
     },
